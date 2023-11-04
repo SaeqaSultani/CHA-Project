@@ -52,7 +52,7 @@
   border-radius: 5px;
 }
 
-.popup-inner button[type="cancel"] {
+.popup-inner button{
   background-color: #af4c4c;
   color: white;
   border: none;
