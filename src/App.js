@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Tabs } from 'antd';
+import React from 'react';
+import ITDep from './components/it_dep/ITDep';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const items = [
+  {
+    key: '1',
+    label: 'IT Dep',
+    children: <ITDep />,
+  },
+  {
+    key: '2',
+    label: 'Finance Dep',
+    children: 'Content of Tab Pane 2',
+  },
+  {
+    key: '3',
+    label: 'HR Dep',
+    children: 'Content of Tab Pane 3',
+  },
+  {
+    key: '4',
+    label: 'Marketing Dep',
+    children: 'Content of Tab Pane 3',
+  },
+  {
+    key: '5',
+    label: 'Operation Dep',
+    children: 'Content of Tab Pane 3',
+  },
+];
+const App = () => <Tabs defaultActiveKey="1" centered items={items} />;
 
 export default App;
