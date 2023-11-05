@@ -17,11 +17,6 @@ CHA Project is a React SPA application that displays information about managers 
 - installing the npm packages (npm install)
 - And finally starting the app. (that will be npm start) 
 
-# Run tests
-  Type this command into the terminal:
-- npm run test
-
-
 # Live Demo :)
 
 [Live Demo Link](https://cha-project.vercel.app/)
